@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <h1>This is <%= websiteName %></h1>
+   <!--<p><strong>Age:</strong><%= data[0].age %></p>-->
+   <!--<p><strong>Name:</strong><%= data[0].name %></p>-->
+
+   <h2>个人介绍</h2>
+
+   <ul>
+       <% data.forEach(function(item){ %>
+          <li><%= item.age %></li>
+           <% item.name.forEach(function(item){ %>
+                  <li><%= item %></li>
+           <% }) %>
+       <% }) %>
+   </ul>
+</body>
+</html>
